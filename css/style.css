@@ -1,0 +1,118 @@
+/*GENERAL STYLES */
+
+/* add your font import line here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* add your font-family property to the body rule here. You will also add a background color and text color here. */
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0 auto;
+    background-color: #000000; 
+    color: #ffffff; 
+    max-width: 1000px;
+}
+
+/* TAG SELECTOR STYLES */
+/* Style your header and footer together here. You can add a background color, another font-family, another text color, a border, etc */
+header, 
+footer {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    margin: auto; 
+    text-align: center;
+    padding: 10px;
+    background-color: #FF3B30;
+    color: rgb(255, 255, 255);
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff; 
+}
+
+.logo-strip {
+    width: 100%;
+    white-space: nowrap; 
+    overflow-x: auto; 
+    background-color:#FF3B30; 
+    padding: 10px ; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+header p {
+    font-size: x-large;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    color: black;
+}
+
+header h1 {
+    font-size: 3em; 
+    font-weight: bold;
+    margin: 0; 
+}
+
+/* Here you will style your <main> box holding all of your collection items. You can give it a background color. But most importantly, make the parent main selector a flebox, make it a row, make it wrap, and justify the content to space between*/
+main {
+    background-color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+/* This rule provides 10px of padding around all sides of each image on your page */
+img {
+    padding: 10px;
+    max-width: 100%; /* Ensure images fit within their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* This rule styles the paragraphs that are describing each of your collection items. You can change the color, font-size, or font-family. */
+main p {
+    font-size: 12pt;
+    padding: 10px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    border-left: 15px solid #FF3B30;
+}
+
+/* CLASSES & IDS */ 
+/* Give each <div> a unique id selector in the HTML document. Then, below, create a #id rule for each section. You can then give each a different background color, add text-align:center, add margin, border, etc. But most importantly, give each a width in percentages that equals about 1/3 of a row that is equal to 100%*/
+
+#pegasus33, #pegasus34, #pegasus35, #pegasus36, #pegasus37, #pegasus38, #pegasus39, #pegasus40, #pegasus41 {
+    text-align: center;
+    margin: 10px; 
+    padding: 10px;
+    border: 2px solid #CEFF00; 
+    width: 30%; 
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255)
+}
+
+#pegasus33, #pegasus34, #pegasus35, #pegasus36, #pegasus37, #pegasus38, #pegasus39, #pegasus40, #pegasus41 {
+    background-color: rgb(255, 255, 255)
+}
+
+/* Hover effect for pop-up animation */
+#pegasus33:hover, #pegasus34:hover, #pegasus35:hover, #pegasus36:hover, 
+#pegasus37:hover, #pegasus38:hover, #pegasus39:hover, #pegasus40:hover, 
+#pegasus41:hover {
+    transform: scale(1.05); /* Slightly enlarge the div by 5% */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+footer a {
+    color: #CEFF00; 
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+}
+
+
